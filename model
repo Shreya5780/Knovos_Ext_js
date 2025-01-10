@@ -1,0 +1,36 @@
+namespace PracticeApp.Models
+{
+    public class Register
+    {
+        public string Username {  get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+}
+
+
+namespace PracticeApp.Models
+{
+    public class Login
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+}
+
+
+using System.Security.Claims;
+
+namespace PracticeApp.Models
+{
+    public class UserRole
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+
+        internal static object Select(Func<object, Claim> value)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
