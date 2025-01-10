@@ -1,0 +1,23 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+
+  "Jwt": {
+    "Issuer": "FreeTrained",
+    "ExpiryMinutes": 3600,
+    "Audience": "YourAudienceHere",
+    "Key": "YoursuperStrongSecurityKeyForJwtTokens123"
+  },
+  /*
+  "ConnectionStrings": {
+    "Default": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
+  },*/
+  "ConnectionStrings": {
+    "Default": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MyNewDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;"
+  },
+  "AllowedHosts": "*"
+}
